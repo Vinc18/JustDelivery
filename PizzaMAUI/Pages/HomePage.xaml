@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:vm="clr-namespace:JustDelivery.ViewModels"
+             xmlns:models="clr-namespace:JustDelivery.Models"
+             x:Class="JustDelivery.Pages.HomePage"
+             Title="Just Delivery"
+             Padding="15"
+             x:DataType="vm:HomeViewModel">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10">
+
+            <!-- Suche-Bereich -->
+            <Border StrokeShape="RoundRectangle 22"
+                    StrokeThickness="2"
+                    Stroke="#FFD700">
+                <Label Text="Search here..."
+                       TextColor="#FFD700"
+                       Padding="10, 14"/>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToAllBurgersPageCommand}" CommandParameter="{x:Boolean true}"/>
+                </Border.GestureRecognizers>
+            </Border>
+
+            <!-- Abstand -->
+            <BoxView HeightRequest="15" Color="Transparent"/>
+
+            <!-- Burger-Ansicht -->
+            <FlexLayout BindableLayout.ItemsSource="{Binding Burgers}"
+                        Wrap="Wrap">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="models:Burger">
+                        <Border FlexLayout.Basis="50%"
+                                StrokeShape="RoundRectangle 10"
+                                StrokeThickness="0"
+                                BackgroundColor="#F5F5F5"
+                                Padding="10"
+                                Margin="2">
+                            <Grid RowDefinitions="150, Auto, auto, Auto"
+                                  RowSpacing="5">
+                                <Image Grid.Row="0"
+                                       Source="{Binding Image}"
+                                       HeightRequest="150"
+                                       WidthRequest="130"/>
+                                <Label Grid.Row="1"
+                                       Text="{Binding Name}"
+                                       HorizontalOptions="Center"
+                                       FontSize="20"/>
+                                <Grid Grid.Row="2"
+                                      ColumnDefinitions="*, *">
+                                    <Label Grid.Column="0"
+                                           Text="{Binding Price, StringFormat='${0:N2}'}"
+                                           VerticalOptions="Center"
+                                           FontAttributes="Bold"/>
+                                    <HorizontalStackLayout Grid.Column="1"
+                                                           HorizontalOptions="End"
+                                                           Spacing="2"
+                                                           VerticalOptions="Center">
+                                        <Label Text="4"/>
+                                        <Image Source="star"
+                                               HeightRequest="15"
+                                               WidthRequest="15">
+                                            <Image.Behaviors>
+                                                <toolkit:IconTintColorBehavior TintColor="#FFD700"/>
+                                            </Image.Behaviors>
+                                        </Image>
+                                    </HorizontalStackLayout>
+                                </Grid>
+                                <Button Grid.Row="3"
+                                        Text="View more"
+                                        BackgroundColor="#4CAF50"
+                                        TextColor="#333333"
+                                        CornerRadius="22"
+                                        FontAttributes="Bold"
+                                        VerticalOptions="End"
+                                        HorizontalOptions="Center"
+                                        Padding="25, 0"
+                                        Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:HomeViewModel}}}"
+                                        CommandParameter="{Binding .}"/>
+                            </Grid>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:HomeViewModel}}, Path=GoToDetailsPageCommand}"
+                                                    CommandParameter="{Binding .}"/>
+                            </Border.GestureRecognizers>
+                        </Border>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </FlexLayout>
+
+
+            <StackLayout Padding="20">
+                <Label Text="Impressum" 
+                       FontSize="30" 
+                       HorizontalOptions="CenterAndExpand" 
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Text="Firma:" FontSize="16" TextColor="black"/>
+                <Label Text="Just Delivery" FontSize="16" TextColor="black"/>
+                <Label Text="Adresse:" FontSize="16" TextColor="black"/>
+                <Label Text="Aarbergergasse 36" FontSize="16" TextColor="black"/>
+                <Label Text="Telefon:" FontSize="16" TextColor="black"/>
+                <Label Text="031 555 02 60" FontSize="16" TextColor="black"/>
+                <Label Text="E-Mail:" FontSize="16" TextColor="black"/>
+                <Label Text="info@justdelivery.com" FontSize="16" TextColor="black"/>
+                <Label Text="Handelsregister:" FontSize="16" TextColor="Black"/>
+                <Label Text="HRB 12345 Amtsgericht Bern" FontSize="16" TextColor="black"/>
+                <Label Text="Umsatzsteuer-ID:" FontSize="16" TextColor="black"/>
+                <Label Text="CH124636789" FontSize="16" TextColor="black"/>
+                <Label Text="Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:" FontSize="16" TextColor="black"/>
+                <Label Text="Vincent Witzmannn , Lorrainestrasse 5b, Bern" FontSize="16" TextColor="black"/>
+            </StackLayout>
+            
+            <StackLayout Padding="20">
+                <Label Text="FAQ Bereich" 
+           FontSize="30" 
+           HorizontalOptions="CenterAndExpand" 
+           VerticalOptions="CenterAndExpand"/>
+                <Label Text="Kann ich meine Bestellung ändern oder stornieren?" FontSize="16" TextColor="black"/>
+                <Label Text="Nachdem Sie Ihre Bestellung aufgegeben haben, können Sie sie in der Regel nicht mehr direkt über die App ändern." FontSize="16" TextColor="black"/>
+                <Label Text="Kann ich Feedback zu meiner Bestellung abgeben?" FontSize="16" TextColor="black"/>
+                <Label Text=" Ja, die App bietet normalerweise eine Funktion zur Bewertung und Bewertung." FontSize="16" TextColor="black"/>
+                <Label Text="Wie heisst das Restaurant?" FontSize="16" TextColor="black"/>
+                <Label Text="The Butcher" FontSize="16" TextColor="black"/>
+  
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

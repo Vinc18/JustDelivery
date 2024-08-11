@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="JustDelivery.Pages.CheckoutPage"
+             Title="Login">
+    <VerticalStackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         Spacing="25">
+        <Entry x:Name="emailEntry"
+               Placeholder="Email"
+               HorizontalOptions="FillAndExpand"/>
+        <Entry x:Name="passwordEntry"
+               Placeholder="Password"
+               IsPassword="True"
+               HorizontalOptions="FillAndExpand"/>
+        <Button x:Name="loginBtn"
+                Text="Login"
+                BackgroundColor="Black"
+                CornerRadius="22"
+                HorizontalOptions="Center"
+                Padding="50, 10"
+                Clicked="loginBtn_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

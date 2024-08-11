@@ -1,0 +1,83 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = JustDelivery
+build_property.ProjectDir = C:\Schule\Modul322\JustDelivery_Vincent\PizzaMAUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/Pages/AllBurgersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.Pages.AllBurgersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AllBurgersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AllBurgersPage.xaml
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/Pages/CartPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.Pages.CartPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CartPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CartPage.xaml
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/Pages/CheckoutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.Pages.CheckoutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CheckoutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CheckoutPage.xaml
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/Pages/DetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.Pages.DetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\DetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\DetailPage.xaml
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/Pages/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.Pages.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\HomePage.xaml
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/Pages/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.Pages.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MainPage.xaml
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/Pages/SuccessPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.Pages.SuccessPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SuccessPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SuccessPage.xaml
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Schule/Modul322/JustDelivery_Vincent/PizzaMAUI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JustDelivery.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

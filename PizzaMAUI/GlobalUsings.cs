@@ -1,0 +1,10 @@
+﻿global using System;
+global using System.Collections.ObjectModel;
+global using JustDelivery.Services;
+global using JustDelivery.Models;
+global using JustDelivery.ViewModels;
+global using JustDelivery.Pages;
+global using CommunityToolkit.Mvvm.ComponentModel;
+global using CommunityToolkit.Mvvm.Input;
+global using CommunityToolkit.Maui.Alerts;
+global using CommunityToolkit.Maui.Core;
